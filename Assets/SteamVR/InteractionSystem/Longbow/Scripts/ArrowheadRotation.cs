@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Sets a random rotation for the arrow head
@@ -20,3 +21,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

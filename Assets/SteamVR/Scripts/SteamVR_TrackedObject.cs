@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: For controlling in-game objects with tracked devices.
@@ -99,3 +100,4 @@ public class SteamVR_TrackedObject : MonoBehaviour
 	}
 }
 
+#endif

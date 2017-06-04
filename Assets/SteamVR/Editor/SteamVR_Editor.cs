@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Custom inspector display for SteamVR_Camera
@@ -125,3 +126,4 @@ public class SteamVR_Editor : Editor
 	}
 }
 
+#endif

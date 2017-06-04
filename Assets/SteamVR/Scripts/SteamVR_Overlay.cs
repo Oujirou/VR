@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Displays 2d content on a large virtual screen.
@@ -181,3 +182,4 @@ public class SteamVR_Overlay : MonoBehaviour
 	}
 }
 
+#endif

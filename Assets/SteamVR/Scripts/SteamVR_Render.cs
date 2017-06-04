@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Handles rendering of all SteamVR_Cameras
@@ -388,3 +389,4 @@ public class SteamVR_Render : MonoBehaviour
 	}
 }
 
+#endif

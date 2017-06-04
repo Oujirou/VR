@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Helper for smoothing over transitions between levels.
@@ -498,3 +499,4 @@ public class SteamVR_LoadLevel : MonoBehaviour
 	}
 }
 
+#endif

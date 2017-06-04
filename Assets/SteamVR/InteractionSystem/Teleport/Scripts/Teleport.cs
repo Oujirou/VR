@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Handles all the teleport logic
@@ -1149,3 +1150,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

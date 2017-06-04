@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Base class for all the objects that the player can teleport to
@@ -55,3 +56,4 @@ namespace Valve.VR.InteractionSystem
 		public abstract bool ShouldMovePlayer();
 	}
 }
+#endif

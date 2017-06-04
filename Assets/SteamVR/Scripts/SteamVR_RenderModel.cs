@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Render model of associated tracked object
@@ -790,3 +791,4 @@ public class SteamVR_RenderModel : MonoBehaviour
     }
 }
 
+#endif

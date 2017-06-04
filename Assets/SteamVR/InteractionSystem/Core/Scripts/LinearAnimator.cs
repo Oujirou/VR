@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Animator whose speed is set based on a linear mapping
@@ -57,3 +58,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

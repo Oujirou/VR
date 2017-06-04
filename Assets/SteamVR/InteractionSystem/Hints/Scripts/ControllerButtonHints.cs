@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Displays text and button hints on the controllers
@@ -770,3 +771,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Sends simple controller button events to UnityEvents
@@ -76,3 +77,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

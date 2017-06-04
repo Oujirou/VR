@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Enables/disables objects based on connectivity and assigned roles.
@@ -255,3 +256,4 @@ public class SteamVR_ControllerManager : MonoBehaviour
 	}
 }
 
+#endif

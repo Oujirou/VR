@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Spawns and attaches an object to the hand after the controller has
@@ -48,3 +49,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Adding this component to an object will allow the player to 
@@ -16,3 +17,4 @@ namespace Valve.VR.InteractionSystem
 		public bool overrideHoverLock = true;
 	}
 }
+#endif

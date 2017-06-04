@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 //======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Destroys this object when its particle system dies
@@ -34,3 +35,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

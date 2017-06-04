@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 using UnityEngine;
 using System.Collections;
@@ -139,3 +140,4 @@ public class SteamVR_LaserPointer : MonoBehaviour
         pointer.transform.localPosition = new Vector3(0f, 0f, dist/2f);
     }
 }
+#endif

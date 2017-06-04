@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Custom Unity Events that take in additional parameters
@@ -26,3 +27,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

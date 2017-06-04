@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Draws different sized room-scale play areas for targeting content
@@ -277,3 +278,4 @@ public class SteamVR_PlayArea : MonoBehaviour
 	}
 }
 
+#endif

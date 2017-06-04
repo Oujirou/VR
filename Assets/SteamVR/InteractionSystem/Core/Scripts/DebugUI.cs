@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Debug UI shown for the player
@@ -46,3 +47,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

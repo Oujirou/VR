@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Target that sends events when hit by an arrow
@@ -79,3 +80,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

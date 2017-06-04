@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Flips the camera output back to normal for D3D.
@@ -16,3 +17,4 @@ public class SteamVR_CameraFlip : MonoBehaviour
 	}
 }
 
+#endif

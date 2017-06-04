@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Simple event system for SteamVR.
@@ -201,3 +202,4 @@ public static class SteamVR_Events
 	}
 }
 
+#endif

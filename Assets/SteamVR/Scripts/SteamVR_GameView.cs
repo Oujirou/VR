@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Handles rendering to the game view window
@@ -16,3 +17,4 @@ public class SteamVR_GameView : MonoBehaviour
 	}
 }
 
+#endif

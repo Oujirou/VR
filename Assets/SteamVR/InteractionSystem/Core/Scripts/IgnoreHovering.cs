@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Makes this object ignore any hovering by the hands
@@ -15,3 +16,4 @@ namespace Valve.VR.InteractionSystem
 		public Hand onlyIgnoreHand = null;
 	}
 }
+#endif

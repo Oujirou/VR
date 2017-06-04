@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Estimates the velocity of an object based on change in position
@@ -160,3 +161,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

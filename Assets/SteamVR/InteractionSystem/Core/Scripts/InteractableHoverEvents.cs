@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Sends UnityEvents for basic hand interactions
@@ -47,3 +48,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

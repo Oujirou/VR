@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 //======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Preferences pane for how SteamVR plugin behaves.
@@ -46,3 +47,4 @@ public class SteamVR_Preferences
 	}
 }
 
+#endif

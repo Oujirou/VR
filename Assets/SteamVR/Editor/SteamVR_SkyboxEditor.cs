@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Custom inspector display for SteamVR_Skybox
@@ -379,3 +380,4 @@ public class SteamVR_SkyboxEditor : Editor
 	}
 }
 
+#endif

@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Interactable that can be used to move in a circular motion
@@ -527,3 +528,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

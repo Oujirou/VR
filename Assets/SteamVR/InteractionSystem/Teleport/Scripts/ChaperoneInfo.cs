@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Stores the play area size info from the players chaperone data
@@ -85,3 +86,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

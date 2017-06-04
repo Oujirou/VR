@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Triggers haptic pulses based on distance between 2 positions
@@ -40,3 +41,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

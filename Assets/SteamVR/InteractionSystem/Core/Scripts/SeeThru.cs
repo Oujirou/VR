@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Uses the see thru renderer while attached to hand
@@ -149,3 +150,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

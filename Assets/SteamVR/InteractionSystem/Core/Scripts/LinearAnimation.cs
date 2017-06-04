@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Animation that moves based on a linear mapping
@@ -62,3 +63,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

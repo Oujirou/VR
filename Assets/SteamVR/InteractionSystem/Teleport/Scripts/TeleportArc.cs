@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Displays the arc lines for teleporting and does the traces
@@ -305,3 +306,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

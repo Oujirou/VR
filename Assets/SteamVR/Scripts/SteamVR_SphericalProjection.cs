@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Applies spherical projection to output.
@@ -38,3 +39,4 @@ public class SteamVR_SphericalProjection : MonoBehaviour
 	}
 }
 
+#endif

@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Handles aligning audio listener when using speakers.
@@ -50,3 +51,4 @@ public class SteamVR_Ears : MonoBehaviour
 	}
 }
 
+#endif

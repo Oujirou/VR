@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Prompt developers to use settings most compatible with SteamVR.
@@ -686,3 +687,4 @@ public class SteamVR_Settings : EditorWindow
 	}
 }
 
+#endif

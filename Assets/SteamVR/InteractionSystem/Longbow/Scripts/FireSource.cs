@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: This object can be set on fire
@@ -110,3 +111,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

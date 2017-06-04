@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Allows Enums to be shown in the inspector as flags
@@ -30,3 +31,4 @@ namespace Valve.VR.InteractionSystem
 	}
 #endif
 }
+#endif

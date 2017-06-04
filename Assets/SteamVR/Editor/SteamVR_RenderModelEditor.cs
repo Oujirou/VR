@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Custom inspector display for SteamVR_RenderModel
@@ -103,3 +104,4 @@ public class SteamVR_RenderModelEditor : Editor
 	}
 }
 
+#endif

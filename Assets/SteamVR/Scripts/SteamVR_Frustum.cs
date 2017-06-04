@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Generates a mesh based on field of view.
@@ -149,3 +150,4 @@ public class SteamVR_Frustum : MonoBehaviour
 	}
 #endif
 }
+#endif

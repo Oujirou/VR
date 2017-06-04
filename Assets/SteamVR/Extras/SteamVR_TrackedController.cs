@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 using UnityEngine;
 using Valve.VR;
@@ -248,3 +249,4 @@ public class SteamVR_TrackedController : MonoBehaviour
         }
     }
 }
+#endif

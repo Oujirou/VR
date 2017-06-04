@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: The object attached to the player's hand that spawns and fires the
@@ -295,3 +296,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

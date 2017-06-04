@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 //#define TEST_FADE_VIEW
 //======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
@@ -126,3 +127,4 @@ public class SteamVR_Fade : MonoBehaviour
 	}
 }
 
+#endif

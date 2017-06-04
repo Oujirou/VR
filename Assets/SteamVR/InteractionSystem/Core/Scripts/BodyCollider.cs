@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Collider dangling from the player's head
@@ -33,3 +34,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

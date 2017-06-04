@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 using UnityEngine;
 using System.Collections;
@@ -56,3 +57,4 @@ public class SteamVR_TestThrow : MonoBehaviour
 		}
 	}
 }
+#endif

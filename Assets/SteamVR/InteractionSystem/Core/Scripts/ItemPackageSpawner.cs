@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Handles the spawning and returning of the ItemPackage
@@ -346,3 +347,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

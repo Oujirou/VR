@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Keeps track of the ItemPackage this object is a part of
@@ -15,3 +16,4 @@ namespace Valve.VR.InteractionSystem
 		public ItemPackage itemPackage;
 	}
 }
+#endif

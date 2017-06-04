@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Spawns a render model for the controller from SteamVR
@@ -164,3 +165,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

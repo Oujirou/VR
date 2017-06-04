@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Helper to display various hmd stats via GUIText
@@ -66,3 +67,4 @@ public class SteamVR_Stats : MonoBehaviour
 	}
 }
 
+#endif

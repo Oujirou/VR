@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Drives a linear mapping based on position between 2 positions
@@ -146,3 +147,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

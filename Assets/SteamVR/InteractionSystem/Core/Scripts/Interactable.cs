@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: This object will get hover events and can be attached to the hands
@@ -41,3 +42,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

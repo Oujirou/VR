@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Sets cubemap to use in the compositor.
@@ -114,3 +115,4 @@ public class SteamVR_Skybox : MonoBehaviour
 	}
 }
 
+#endif

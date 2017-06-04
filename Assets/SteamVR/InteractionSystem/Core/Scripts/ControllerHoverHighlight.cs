@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Highlights the controller when hovering over interactables
@@ -191,3 +192,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

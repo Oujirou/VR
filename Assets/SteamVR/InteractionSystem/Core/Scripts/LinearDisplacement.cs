@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Move the position of this object based on a linear mapping
@@ -39,3 +40,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

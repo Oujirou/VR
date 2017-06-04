@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: This object won't be destroyed when a new scene is loaded
@@ -19,3 +20,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

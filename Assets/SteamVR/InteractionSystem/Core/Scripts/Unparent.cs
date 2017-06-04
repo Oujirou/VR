@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Unparents an object and keeps track of the old parent
@@ -38,3 +39,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

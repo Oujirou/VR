@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Single location that the player can teleport to
@@ -345,3 +346,4 @@ namespace Valve.VR.InteractionSystem
 	}
 #endif
 }
+#endif

@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Provides a haptic bump when colliding with balloons
@@ -29,3 +30,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

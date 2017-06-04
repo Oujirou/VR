@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Can be attached to the controller to collide with the balloons
@@ -85,3 +86,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

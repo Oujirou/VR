@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Demonstrates how to create a simple interactable object
@@ -127,3 +128,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: UIElement that responds to VR hands and generates UnityEvents
@@ -87,3 +88,4 @@ namespace Valve.VR.InteractionSystem
 	}
 #endif
 }
+#endif

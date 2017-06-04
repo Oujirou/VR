@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Test SteamVR_Controller support.
@@ -130,3 +131,4 @@ public class SteamVR_TestController : MonoBehaviour
 	}
 }
 
+#endif

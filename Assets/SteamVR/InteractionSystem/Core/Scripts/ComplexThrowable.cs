@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Throwable that uses physics joints to attach instead of just
@@ -188,3 +189,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

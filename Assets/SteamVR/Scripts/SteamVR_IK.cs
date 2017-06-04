@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Simple two bone ik solver.
@@ -168,3 +169,4 @@ public class SteamVR_IK : MonoBehaviour
 	}
 }
 
+#endif

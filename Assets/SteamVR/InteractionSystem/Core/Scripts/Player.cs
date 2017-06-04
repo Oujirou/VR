@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Player interface used to query HMD transforms and VR hands
@@ -404,3 +405,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

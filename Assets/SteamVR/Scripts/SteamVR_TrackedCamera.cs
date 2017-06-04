@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Provides access to video feed and poses of tracked cameras.
@@ -216,3 +217,4 @@ public class SteamVR_TrackedCamera
 	#endregion
 }
 
+#endif

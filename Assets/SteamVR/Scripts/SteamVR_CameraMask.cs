@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Masks out pixels that cannot be seen through the connected hmd.
@@ -16,3 +17,4 @@ public class SteamVR_CameraMask : MonoBehaviour
 	}
 }
 
+#endif

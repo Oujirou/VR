@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: An area that the player can teleport to
@@ -195,3 +196,4 @@ namespace Valve.VR.InteractionSystem
 	}
 #endif
 }
+#endif

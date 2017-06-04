@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Example menu using OnGUI with SteamVR_Camera's overlay support
@@ -330,3 +331,4 @@ public class SteamVR_Menu : MonoBehaviour
 	}
 }
 
+#endif

@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: The bow
@@ -440,3 +441,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

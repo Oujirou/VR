@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 using UnityEngine;
 
@@ -82,3 +83,4 @@ public class SteamVR_TestTrackedCamera : MonoBehaviour
 	}
 }
 
+#endif

@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Plays one of many audio files with possible randomized parameters
@@ -214,3 +215,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

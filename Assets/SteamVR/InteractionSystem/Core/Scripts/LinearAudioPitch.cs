@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Changes the pitch of this audio source based on a linear mapping
@@ -56,3 +57,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif

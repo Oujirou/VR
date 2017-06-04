@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Wrapper for working with SteamVR controller input
@@ -233,3 +234,4 @@ public class SteamVR_Controller
 	}
 }
 
+#endif

@@ -1,3 +1,4 @@
+#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Creates an object and attaches it to the hand
@@ -35,3 +36,4 @@ namespace Valve.VR.InteractionSystem
 		}
 	}
 }
+#endif
