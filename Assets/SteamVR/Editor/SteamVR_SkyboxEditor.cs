@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Custom inspector display for SteamVR_Skybox
 //
@@ -15,6 +14,7 @@ using System.IO;
 [CustomEditor(typeof(SteamVR_Skybox)), CanEditMultipleObjects]
 public class SteamVR_SkyboxEditor : Editor
 {
+#if !UNITY_EDITOR_OSX
 	private const string nameFormat = "{0}/{1}-{2}.png";
 	private const string helpText = "Take snapshot will use the current " +
 		"position and rotation to capture six directional screenshots to use as this " +
@@ -378,6 +378,5 @@ public class SteamVR_SkyboxEditor : Editor
 			}
 		}
 	}
-}
-
 #endif
+}

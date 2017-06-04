@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Simple event system for SteamVR.
 //
@@ -24,6 +23,7 @@ using Valve.VR;
 
 public static class SteamVR_Events
 {
+#if !UNITY_EDITOR_OSX
 	public abstract class Action
 	{
 		public abstract void Enable(bool enabled);
@@ -200,6 +200,6 @@ public static class SteamVR_Events
 	{
 		return new Action<VREvent_t>(System(eventType), action);
 	}
+#endif
 }
 
-#endif

@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Utilities for working with SteamVR
 //
@@ -12,6 +11,7 @@ using Valve.VR;
 
 public static class SteamVR_Utils
 {
+#if !UNITY_EDITOR_OSX
 	// this version does not clamp [0..1]
 	public static Quaternion Slerp(Quaternion A, Quaternion B, float t)
 	{
@@ -594,6 +594,5 @@ public static class SteamVR_Utils
 		Object.DestroyImmediate(previewTexture);
 		Object.DestroyImmediate(texture);
 	}
-}
-
 #endif
+}

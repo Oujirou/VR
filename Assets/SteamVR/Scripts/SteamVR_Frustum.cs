@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Generates a mesh based on field of view.
 //
@@ -11,6 +10,7 @@ using Valve.VR;
 [ExecuteInEditMode, RequireComponent(typeof(MeshRenderer), typeof(MeshFilter))]
 public class SteamVR_Frustum : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public SteamVR_TrackedObject.EIndex index;
 
 	public float fovLeft = 45, fovRight = 45, fovTop = 45, fovBottom = 45, nearZ = 0.5f, farZ = 2.5f;
@@ -149,5 +149,5 @@ public class SteamVR_Frustum : MonoBehaviour
 			UpdateModel();
 	}
 #endif
-}
 #endif
+}

@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Test SteamVR_Controller support.
 //
@@ -11,6 +10,7 @@ using Valve.VR;
 
 public class SteamVR_TestController : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	List<int> controllerIndices = new List<int>();
 
 	private void OnDeviceConnected(int index, bool connected)
@@ -129,6 +129,6 @@ public class SteamVR_TestController : MonoBehaviour
 			}
 		}
 	}
+#endif
 }
 
-#endif

@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Draws different sized room-scale play areas for targeting content
 //
@@ -13,6 +12,7 @@ using Valve.VR;
 [ExecuteInEditMode, RequireComponent(typeof(MeshRenderer), typeof(MeshFilter))]
 public class SteamVR_PlayArea : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public float borderThickness = 0.15f;
 	public float wireframeHeight = 2.0f;
 	public bool drawWireframeWhenSelectedOnly = false;
@@ -276,6 +276,6 @@ public class SteamVR_PlayArea : MonoBehaviour
 
 		BuildMesh();
 	}
+#endif
 }
 
-#endif

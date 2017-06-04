@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Custom inspector display for SteamVR_RenderModel
 //
@@ -14,6 +13,7 @@ using Valve.VR;
 [CustomEditor(typeof(SteamVR_RenderModel)), CanEditMultipleObjects]
 public class SteamVR_RenderModelEditor : Editor
 {
+#if !UNITY_EDITOR_OSX
 	SerializedProperty script, index, modelOverride, shader, verbose, createComponents, updateDynamically;
 
 	static string[] renderModelNames;
@@ -102,6 +102,5 @@ public class SteamVR_RenderModelEditor : Editor
 
 		serializedObject.ApplyModifiedProperties();
 	}
-}
-
 #endif
+}

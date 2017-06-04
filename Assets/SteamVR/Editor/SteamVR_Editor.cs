@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Custom inspector display for SteamVR_Camera
 //
@@ -12,6 +11,7 @@ using System.IO;
 [CustomEditor(typeof(SteamVR_Camera)), CanEditMultipleObjects]
 public class SteamVR_Editor : Editor
 {
+#if !UNITY_EDITOR_OSX
 	int bannerHeight = 150;
 	Texture logo;
 
@@ -124,6 +124,5 @@ public class SteamVR_Editor : Editor
 		}, "steamvr.unitypackage", ExportPackageOptions.Recurse);
 		EditorApplication.Exit(0);
 	}
-}
-
 #endif
+}

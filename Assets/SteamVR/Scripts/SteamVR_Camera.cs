@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Adds SteamVR render support to existing camera objects
 //
@@ -13,6 +12,7 @@ using Valve.VR;
 [RequireComponent(typeof(Camera))]
 public class SteamVR_Camera : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	[SerializeField]
 	private Transform _head;
 	public Transform head { get { return _head; } }
@@ -274,6 +274,5 @@ public class SteamVR_Camera : MonoBehaviour
 	}
 
 	#endregion
-}
-
 #endif
+}

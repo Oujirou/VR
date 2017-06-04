@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Access to SteamVR system (hmd) and compositor (distort) interfaces.
 //
@@ -8,6 +7,11 @@
 using UnityEngine;
 using Valve.VR;
 
+#if UNITY_EDITOR_OSX
+public class SteamVR
+{
+
+#elif !UNITY_EDITOR_OSX
 public class SteamVR : System.IDisposable
 {
 	// Use this to check if SteamVR is currently active without attempting
@@ -350,6 +354,5 @@ public class SteamVR : System.IDisposable
 		if (_instance != null)
 			_instance.Dispose();
 	}
-}
-
 #endif
+}

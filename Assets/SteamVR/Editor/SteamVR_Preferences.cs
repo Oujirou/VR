@@ -1,4 +1,3 @@
-#if !UNITY_EDITOR_OSX
 //======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Preferences pane for how SteamVR plugin behaves.
@@ -10,6 +9,7 @@ using UnityEditor;
 
 public class SteamVR_Preferences
 {
+#if !UNITY_EDITOR_OSX
 	/// <summary>
 	/// Should SteamVR automatically enable VR when opening Unity or pressing play.
 	/// </summary>
@@ -45,6 +45,6 @@ public class SteamVR_Preferences
 
 		EditorGUILayout.EndVertical();
 	}
+#endif
 }
 
-#endif

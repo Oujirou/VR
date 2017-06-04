@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Example menu using OnGUI with SteamVR_Camera's overlay support
 //
@@ -10,6 +9,7 @@ using Valve.VR;
 
 public class SteamVR_Menu : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public Texture cursor, background, logo;
 	public float logoHeight, menuOffset;
 
@@ -329,6 +329,6 @@ public class SteamVR_Menu : MonoBehaviour
 		Cursor.visible = savedCursorVisible;
 		Cursor.lockState = savedCursorLockState;
 	}
+#endif
 }
 
-#endif

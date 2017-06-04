@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Applies spherical projection to output.
 //
@@ -10,6 +9,7 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class SteamVR_SphericalProjection : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	static Material material;
 
 	public void Set(Vector3 N,
@@ -37,6 +37,6 @@ public class SteamVR_SphericalProjection : MonoBehaviour
 	{
 		Graphics.Blit(src, dest, material);
 	}
+#endif
 }
 
-#endif

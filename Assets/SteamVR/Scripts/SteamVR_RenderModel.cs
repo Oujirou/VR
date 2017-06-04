@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Render model of associated tracked object
 //
@@ -14,6 +13,7 @@ using Valve.VR;
 [ExecuteInEditMode]
 public class SteamVR_RenderModel : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public SteamVR_TrackedObject.EIndex index = SteamVR_TrackedObject.EIndex.None;
 	public string modelOverride;
 
@@ -789,6 +789,5 @@ public class SteamVR_RenderModel : MonoBehaviour
             return (RenderModel_TextureMap_t)Marshal.PtrToStructure(pRenderModel, typeof(RenderModel_TextureMap_t));
         }
     }
-}
-
 #endif
+}

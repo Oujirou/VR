@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Provides access to video feed and poses of tracked cameras.
 //
@@ -26,6 +25,7 @@ using Valve.VR;
 
 public class SteamVR_TrackedCamera
 {
+#if !UNITY_EDITOR_OSX
 	public class VideoStreamTexture
 	{
 		public VideoStreamTexture(uint deviceIndex, bool undistorted)
@@ -215,6 +215,6 @@ public class SteamVR_TrackedCamera
 	static VideoStream[] videostreams;
 
 	#endregion
+#endif
 }
 
-#endif
