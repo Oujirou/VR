@@ -16,7 +16,7 @@ namespace VRGame
 		private void LoadGameScene ()
 		{
 			SceneManager.LoadScene(GameScenes.GAME_SCENE, LoadSceneMode.Additive);
-			Debug.LogFormat("[{0}]: Loaded scene {1}.", this.GetType().Name, GameScenes.GAME_SCENE);
+			Debug.LogFormat("<color=lime>[{0}]</color> Loaded scene {1}.", this.GetType().Name, GameScenes.GAME_SCENE);
 		}
 	}
 
