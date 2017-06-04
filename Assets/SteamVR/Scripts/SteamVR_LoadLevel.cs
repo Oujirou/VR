@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Helper for smoothing over transitions between levels.
 //
@@ -12,6 +11,7 @@ using System.IO;
 
 public class SteamVR_LoadLevel : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	private static SteamVR_LoadLevel _active = null;
 	public static bool loading { get { return _active != null; } }
 	public static float progress
@@ -497,6 +497,6 @@ public class SteamVR_LoadLevel : MonoBehaviour
 
 		return handle;
 	}
+#endif
 }
 
-#endif

@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Simple two bone ik solver.
 //
@@ -9,6 +8,7 @@ using UnityEngine;
 
 public class SteamVR_IK : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public Transform target;
 	public Transform start, joint, end;
 	public Transform poleVector, upVector;
@@ -167,6 +167,6 @@ public class SteamVR_IK : MonoBehaviour
 
 		return false; // edge cases
 	}
+#endif
 }
 
-#endif

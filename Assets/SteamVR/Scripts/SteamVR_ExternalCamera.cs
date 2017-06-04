@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Used to render an external camera of vr player (split front/back).
 //
@@ -11,6 +10,7 @@ using Valve.VR;
 
 public class SteamVR_ExternalCamera : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public struct Config
 	{
 		public float x, y, z;
@@ -312,6 +312,5 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 			SteamVR_Camera.sceneResolutionScale = sceneResolutionScale;
 		}
 	}
-}
-
 #endif
+}

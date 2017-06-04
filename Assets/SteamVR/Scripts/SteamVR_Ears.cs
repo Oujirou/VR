@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Handles aligning audio listener when using speakers.
 //
@@ -11,6 +10,7 @@ using Valve.VR;
 [RequireComponent(typeof(AudioListener))]
 public class SteamVR_Ears : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public SteamVR_Camera vrcam;
 
 	bool usingSpeakers;
@@ -49,6 +49,6 @@ public class SteamVR_Ears : MonoBehaviour
 		if (usingSpeakers)
 			SteamVR_Events.NewPosesApplied.Remove(OnNewPosesApplied);
 	}
+#endif
 }
 
-#endif

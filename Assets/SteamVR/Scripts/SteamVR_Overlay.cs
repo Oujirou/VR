@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Displays 2d content on a large virtual screen.
 //
@@ -11,6 +10,7 @@ using Valve.VR;
 
 public class SteamVR_Overlay : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public Texture texture;
 	public bool curved = true;
 	public bool antialias = true;
@@ -180,6 +180,6 @@ public class SteamVR_Overlay : MonoBehaviour
 		results.distance = output.fDistance;
 		return true;
 	}
+#endif
 }
 
-#endif

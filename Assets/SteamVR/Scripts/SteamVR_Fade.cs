@@ -1,4 +1,3 @@
-#if !UNITY_EDITOR_OSX
 //#define TEST_FADE_VIEW
 //======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
@@ -26,6 +25,7 @@ using Valve.VR;
 
 public class SteamVR_Fade : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	private Color currentColor = new Color(0, 0, 0, 0);	// default starting color: black and fully transparent
 	private Color targetColor = new Color(0, 0, 0, 0);	// default target color: black and fully transparent
 	private Color deltaColor = new Color(0, 0, 0, 0);	// the delta-color is basically the "speed / second" at which the current color should change
@@ -125,6 +125,6 @@ public class SteamVR_Fade : MonoBehaviour
 			GL.End();
 		}
 	}
+#endif
 }
 
-#endif

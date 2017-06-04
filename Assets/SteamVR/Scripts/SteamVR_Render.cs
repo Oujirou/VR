@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Handles rendering of all SteamVR_Cameras
 //
@@ -11,6 +10,7 @@ using Valve.VR;
 
 public class SteamVR_Render : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public bool pauseGameWhenDashboardIsVisible = true;
 	public bool lockPhysicsUpdateRateToRenderFrequency = true;
 
@@ -387,6 +387,6 @@ public class SteamVR_Render : MonoBehaviour
 			}
 		}
 	}
+#endif
 }
 
-#endif

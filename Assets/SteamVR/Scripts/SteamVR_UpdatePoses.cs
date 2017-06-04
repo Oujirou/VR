@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Helper to update poses when using native OpenVR integration.
 //
@@ -11,6 +10,7 @@ using Valve.VR;
 [RequireComponent(typeof(Camera))]
 public class SteamVR_UpdatePoses : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 #if !(UNITY_5_6)
 	void Awake()
 	{
@@ -33,6 +33,5 @@ public class SteamVR_UpdatePoses : MonoBehaviour
 			SteamVR_Events.NewPosesApplied.Send();
 		}
 	}
-}
-
 #endif
+}

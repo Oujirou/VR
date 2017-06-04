@@ -1,4 +1,3 @@
-#if !UNITY_EDITOR_OSX
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Wrapper for working with SteamVR controller input
@@ -16,6 +15,7 @@ using Valve.VR;
 
 public class SteamVR_Controller
 {
+#if !UNITY_EDITOR_OSX
 	public class ButtonMask
 	{
 		public const ulong System			= (1ul << (int)EVRButtonId.k_EButton_System); // reserved
@@ -232,6 +232,6 @@ public class SteamVR_Controller
 
 		return result;
 	}
+#endif
 }
 
-#endif

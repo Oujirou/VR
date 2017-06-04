@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: For controlling in-game objects with tracked devices.
 //
@@ -10,6 +9,7 @@ using Valve.VR;
 
 public class SteamVR_TrackedObject : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public enum EIndex
 	{
 		None = -1,
@@ -98,6 +98,5 @@ public class SteamVR_TrackedObject : MonoBehaviour
 		if (System.Enum.IsDefined(typeof(EIndex), index))
 			this.index = (EIndex)index;
 	}
-}
-
 #endif
+}

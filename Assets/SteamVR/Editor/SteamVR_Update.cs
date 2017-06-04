@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Notify developers when a new version of the plugin is available.
 //
@@ -13,6 +12,7 @@ using System.Text.RegularExpressions;
 [InitializeOnLoad]
 public class SteamVR_Update : EditorWindow
 {
+#if !UNITY_EDITOR_OSX
 	const string currentVersion = "1.2.1";
 	const string versionUrl = "http://media.steampowered.com/apps/steamvr/unitypluginversion.txt";
 	const string notesUrl = "http://media.steampowered.com/apps/steamvr/unityplugin-v{0}.txt";
@@ -167,6 +167,5 @@ public class SteamVR_Update : EditorWindow
 				EditorPrefs.DeleteKey(key);
 		}
 	}
-}
-
 #endif
+}

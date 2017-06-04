@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Enables/disables objects based on connectivity and assigned roles.
 //
@@ -11,6 +10,7 @@ using Valve.VR;
 
 public class SteamVR_ControllerManager : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public GameObject left, right;
 	public GameObject[] objects; // populate with objects you want to assign to additional controllers
 
@@ -254,6 +254,6 @@ public class SteamVR_ControllerManager : MonoBehaviour
 			SetTrackedDeviceIndex(objectIndex++, OpenVR.k_unTrackedDeviceIndexInvalid);
 		}
 	}
+#endif
 }
 
-#endif

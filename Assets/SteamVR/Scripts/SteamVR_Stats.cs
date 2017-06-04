@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Helper to display various hmd stats via GUIText
 //
@@ -10,6 +9,7 @@ using Valve.VR;
 
 public class SteamVR_Stats : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	public GUIText text;
 
 	public Color fadeColor = Color.black;
@@ -65,6 +65,6 @@ public class SteamVR_Stats : MonoBehaviour
 			}
 		}
 	}
+#endif
 }
 
-#endif

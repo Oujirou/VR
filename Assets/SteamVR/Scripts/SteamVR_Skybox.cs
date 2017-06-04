@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Sets cubemap to use in the compositor.
 //
@@ -10,6 +9,7 @@ using Valve.VR;
 
 public class SteamVR_Skybox : MonoBehaviour
 {
+#if !UNITY_EDITOR_OSX
 	// Note: Unity's Left and Right Skybox shader variables are switched.
 	public Texture front, back, left, right, top, bottom;
 
@@ -113,6 +113,6 @@ public class SteamVR_Skybox : MonoBehaviour
 	{
 		ClearOverride();
 	}
+#endif
 }
 
-#endif

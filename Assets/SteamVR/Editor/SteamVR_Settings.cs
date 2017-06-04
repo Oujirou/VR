@@ -1,5 +1,4 @@
-#if !UNITY_EDITOR_OSX
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Prompt developers to use settings most compatible with SteamVR.
 //
@@ -12,6 +11,7 @@ using System.IO;
 [InitializeOnLoad]
 public class SteamVR_Settings : EditorWindow
 {
+#if !UNITY_EDITOR_OSX
 	const bool forceShow = false; // Set to true to get the dialog to show back up in the case you clicked Ignore All.
 
 	const string ignore = "ignore.";
@@ -685,6 +685,5 @@ public class SteamVR_Settings : EditorWindow
 
 		GUILayout.EndHorizontal();
 	}
-}
-
 #endif
+}
